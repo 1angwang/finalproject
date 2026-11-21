@@ -1,20 +1,21 @@
-Package: bst260project
+Package: finalproject
 Title: project code and narrative
 Version: 0.0.3
 Authors@R:
-    person(given = "yourfirstname",
-           family = "lastname",
+    person(given = "Haoming",
+           family = "Yu",
            role = c("aut", "cre"),
-           email = "youremail@gmail.com",
-           comment = c(ORCID = "0000-0002-1825-0097"))
-Description: provide text on what your project emphasizes and 
-	accomplishes in three or more complete sentences.
+           email = "haomingyu@hsph.harvard.edu")
+Description: This project examines the association between body mass index
+    and systolic blood pressure in NHANES. It compares seasonal patterns
+    of reported waterborne disease outbreaks across water exposure
+    categories. The project website documents both analyses.
 Depends: R (>= 4.5.0)
-Suggests: knitr, testthat, rmarkdown, pkgdown
+Suggests: knitr, testthat, rmarkdown, pkgdown, quarto
 License: Artistic-2.0
 VignetteBuilder: quarto
 Encoding: UTF-8
-URL: https://github.com/youreponame
-BugReports: https://github.com/youreponame/issues
+URL: https://github.com/1angwang/finalproject
+BugReports: https://github.com/1angwang/finalproject/issues
 Config/roxygen2/version: 8.1.1
 Roxygen: list(markdown=TRUE)

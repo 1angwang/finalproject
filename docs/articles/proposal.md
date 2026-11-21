@@ -1,0 +1,91 @@
+# BST 260 Final Project Proposal
+
+To the BST260 Teaching Team, Fall 2026
+
+## NHANES — BMI and systolic blood pressure
+
+Among NHANES participants aged 40–79, is body mass index (BMI)
+associated with systolic blood pressure?
+
+I will use the `NHANES` dataset from the R package of the same name. It
+is a resampled version of the 2009–2010 and 2011–2012 National Health
+and Nutrition Examination Survey data collected by the U.S. National
+Center for Health Statistics. [NHANES R package
+documentation](https://search.r-project.org/CRAN/refmans/NHANES/html/NHANES.html)
+
+The study population includes NHANES participants aged 40–79 years. The
+unit of analysis is the individual participant.
+
+The exposure is body mass index (BMI, kg/m²), treated as a continuous
+variable. The outcome is systolic blood pressure (BPSysAve, mmHg), also
+treated as a continuous variable.
+
+Participants with missing BMI or systolic blood pressure will be
+excluded from the primary analysis. I will report how many participants
+are missing each variable and how many were excluded in total.
+
+In the adjusted model, I will include age, recorded sex, race and
+ethnicity, smoking history, and survey cycle.
+
+Among participants with both BMI and systolic blood pressure data, those
+missing any adjustment variable will be excluded from the adjusted
+analysis. I will report the number excluded at this step and the final
+sample size for the adjusted model.
+
+I will create a scatterplot with BMI on the horizontal axis and systolic
+blood pressure on the vertical axis to visualize the relationship
+between the two variables. I will then fit a multiple linear regression
+model with systolic blood pressure as the outcome, BMI as the main
+predictor, and the covariates listed above to estimate the adjusted
+difference in mean systolic blood pressure (mmHg) associated with a 1
+kg/m² higher BMI.
+
+## CDC — Seasonality of waterborne disease outbreaks
+
+Among U.S. waterborne disease outbreaks reported for 2009–2023, how did
+the distribution by month of the year differ across water exposure
+categories?
+
+I will use the `waterborne` dataset included in the BST 260 project
+template. It is derived from the CDC’s National Outbreak Reporting
+System (NORS), which collects outbreak reports from state, local, and
+territorial health departments. [CDC NORS data
+documentation](https://www.cdc.gov/nors/data/)
+
+The study population consists of U.S. waterborne disease outbreaks
+recorded in the CDC dataset for 2009–2023. The unit of analysis is an
+individual reported outbreak.
+
+The exposure variable is the reported water exposure category
+(water_exposure), a categorical variable that includes exposures such as
+drinking water, treated recreational water, and untreated recreational
+water.
+
+The outcome is the calendar month of the earliest reported illness onset
+in each outbreak (month), treated as a categorical variable with 12
+levels from January through December.
+
+For the main comparison, I will include outbreaks with a recorded onset
+month and a single, identified water exposure category. I will report
+the number of outbreaks excluded because of missing information,
+undetermined water exposure, or multiple recorded exposure categories.
+
+In a secondary analysis, I will account for geographic region and
+outbreak year. Both the types of water exposure and the timing of
+outbreaks may vary by region. Including outbreak year will help account
+for changes over time in the types of outbreaks reported to CDC.
+
+For each water exposure category, I will calculate the percentage of
+outbreaks that began in each calendar month. I will plot these
+percentages from January through December, using one line per exposure
+category to compare seasonal patterns.
+
+## AI Use Disclosure
+
+I used it to clarify the assignment requirements, verify dataset sources
+and variable definitions, and check the CDC data for missing values and
+records with multiple water exposure categories. I also used it to
+suggest analysis approaches and draft or revise English wording for
+parts of the proposal, including the variable definitions, missing-data
+plans, and analysis plans. Codex also helped insert and organize text in
+the Quarto file in RStudio.
